@@ -7,6 +7,7 @@ const Login= ()=>{
 
     return(
         <div className="login-container">
+            <h1>NEXUS</h1>
             <h2>LOGIN</h2>
             <form >
                 <input type="email"
