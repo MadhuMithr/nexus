@@ -9,7 +9,7 @@
 
 // export default App
 import React from "react";
-import Login from "./Login";
+import Login from "./components/auth_comp/Login";
 
 function App() {
   return (
