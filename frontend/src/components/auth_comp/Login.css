@@ -26,4 +26,6 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;

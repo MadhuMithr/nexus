@@ -25,34 +25,54 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <h1>NEXUS</h1>
-      <h2>LOGIN</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="E-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
+   
+      <div className = "bg-gray-50 min-h-screen flex items center justify-center p-10">
+        <div className = "bg-gray-100 flex rounded-2xl shadow-lg max-w-4xl p-5 ">
+
+             <div className = "sm:w-1/2 px-16">
+              <h2 className = "font-bold text-2xl">Nexus - Login</h2>
+              <p class = "text-sm mt-4">If you already a memeber, easily log in</p>
+
+              <form onSubmit={handleSubmit} className = "flex flex-col gap-5">
+
+            <input
+                type="email"
+                name = "email"
+                className="p-2 mt-4 rounded-xl"
+                placeholder="Enter E-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+
+              />
+                <input
           type="text"
-          placeholder="College ID"
+           className="p-2 mt-4 rounded-xl"
+          placeholder="Enter College ID"
           value={collegeId}
           onChange={(e) => setCollegeId(e.target.value)}
           required
         />
         <input
           type="password"
+           className="p-2 mt-4 rounded-xl"
           placeholder="Enter password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+        <button type="submit" class = "bg-black rounded-xl text-white py-2">Login</button>
+              </form>
+              <button class ="mt-5 text-x border-b py-4 text-blue-600" >Forgot your Password?</button>
+             </div>
+
+             <div className = "sm:block hidden w-1/2">
+              <img className=" rounded-2xl" src = "src\assets\login_side.jpg" alt =""></img>
+             </div>
+        </div>
+      </div>
+  
+   
   );
 };
 
