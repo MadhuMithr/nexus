@@ -26,7 +26,8 @@ const Login = () => {
 
   return (
    
-      <div className = "bg-gray-50 min-h-screen flex items center justify-center p-10">
+      <div className = "min-h-screen flex items center justify-center p-10  bg-center"
+      style={{ backgroundImage: "url('src/assets/doodles.jpg')" }}>
         <div className = "bg-gray-100 flex rounded-2xl shadow-lg max-w-4xl p-5 ">
 
              <div className = "sm:w-1/2 px-16">
@@ -61,7 +62,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit" class = "bg-black rounded-xl text-white py-2">Login</button>
+        <button type="submit" class = "bg-[#001A6E] rounded-xl text-white py-2">Login</button>
               </form>
               <button class ="mt-5 text-x border-b py-4 text-blue-600" >Forgot your Password?</button>
              </div>
