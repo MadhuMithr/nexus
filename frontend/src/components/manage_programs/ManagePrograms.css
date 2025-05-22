@@ -1,0 +1,131 @@
+.manage-programs {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f2f5;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #003366; /* Dark blue */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar h3 {
+  margin: 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.sidebar h3:hover {
+  color: #ffcc00;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #fefafc;
+}
+
+.main-content h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.main-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Action Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.new-session, .create-group-chat {
+  background-color: #4b0082; /* Indigo */
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-session:hover, .create-group-chat:hover {
+  background-color: #36006b;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tabs button {
+  background-color: #005f99;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tabs button:hover {
+  background-color: #004170;
+}
+
+/* Student Info Card */
+.student-info {
+  background-color: #fff;
+  padding: 20px;
+  height: 150px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  
+}
+
+.student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.student h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.student p {
+  margin: 4px 0;
+  color: #444;
+}
+
+.remove, .message {
+  background-color: #dcdcdc;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.remove:hover, .message:hover {
+  background-color: #bfbfbf;
+}
