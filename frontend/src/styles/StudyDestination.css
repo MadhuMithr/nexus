@@ -1,0 +1,95 @@
+.destination-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.flag-card {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: transform 0.3s, border 0.3s;
+  background-color: #fff;
+}
+
+.flag-card:hover {
+  transform: scale(1.05);
+}
+
+.flag-card.selected {
+  border: 2px solid #007bff;
+  background-color: #e0f0ff;
+}
+
+.flag {
+  font-size: 40px;
+}
+
+.country {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.other-country {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.other-country label {
+  margin-bottom: 5px;
+}
+
+.other-country input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.nav-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}

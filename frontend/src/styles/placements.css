@@ -1,0 +1,135 @@
+/* General page container */
+.domain-container,
+.techstack-container,
+.companies-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+}
+
+/* Title heading */
+h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid layout for domain, techstack, and company buttons */
+.domain-grid,
+.techstack-grid,
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* General button style */
+.domain-button,
+.techstack-button,
+.company-button {
+  background-color: #f0f8ff;
+  color: #000000;
+  border: 2px solid #0077cc;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Remove arrow/focus styles */
+button::-moz-focus-inner {
+  border: 0;
+}
+button:focus {
+  outline: none;
+}
+
+/* Selected button style */
+.domain-button.selected,
+.techstack-button.selected,
+.company-button.selected {
+  background-color: #0077cc;
+  color: #ffffff;
+}
+
+/* Input section for 'Other' */
+.other-domain,
+.other-techstack,
+.other-company {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.other-domain label,
+.other-techstack label,
+.other-company label {
+  font-weight: bold;
+  color: #003366;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 0.6rem;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Navigation button container */
+.button-container,
+.companies-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Navigation buttons */
+.nav-button,
+.nav-btn {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-btn:hover {
+  background-color: #005599;
+}
+
+.skip-btn {
+  background-color: #666666;
+}
+
+.skip-btn:hover {
+  background-color: #444444;
+}
+
+.next-btn {
+  background-color: #0077cc;
+}
+
+.next-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Optional: Spacer for layout adjustment */
+.spacer {
+  width: 2rem;
+}

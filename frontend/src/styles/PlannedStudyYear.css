@@ -1,0 +1,58 @@
+.study-year-container {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.study-year-dropdown {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  outline: none;
+  width: 220px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.study-year-dropdown:hover {
+  border-color: #0056b3;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.nav-button {
+  padding: 10px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prev {
+  background-color: #6c757d;
+  color: white;
+}
+
+.right-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.skip {
+  background-color: #ffc107;
+  color: black;
+}
+
+.next {
+  background-color: #007bff;
+  color: white;
+}

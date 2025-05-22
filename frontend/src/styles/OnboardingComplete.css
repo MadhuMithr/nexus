@@ -1,0 +1,33 @@
+/* OnboardingComplete.css */
+
+.completion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertically center */
+  align-items: center;      /* horizontally center */
+  height: 100vh;            /* full viewport height */
+  text-align: center;
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9; /* optional light background */
+  color: #333;
+}
+
+.completion-container.fade-in {
+  opacity: 1;
+}
+
+.completion-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.completion-container p {
+  font-size: 1.2rem;
+  margin: 6px 0;
+  max-width: 400px;
+  line-height: 1.5;
+}

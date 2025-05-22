@@ -1,0 +1,270 @@
+/* ===== General Page Containers ===== */
+.exams-container,
+.field-container,
+.study-year-container,
+.destination-container {
+  padding: 2rem 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ===== Headings ===== */
+h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* ===== Button styles ===== */
+.nav-button {
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  padding: 0.55rem 1.25rem;
+  margin: 0 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.nav-button:hover {
+  background-color: #003d99;
+}
+
+.nav-button.previous,
+.nav-button.prev {
+  background-color: #6c757d;
+}
+
+.nav-button.previous:hover,
+.nav-button.prev:hover {
+  background-color: #495057;
+}
+
+.nav-button.skip {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.nav-button.skip:hover {
+  background-color: #e0a800;
+}
+
+/* ===== Button container (flex) ===== */
+.button-container,
+.navigation-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.navigation-buttons .right-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ===== ExamsPlanning - Exam grid and cards ===== */
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.exam-card {
+  cursor: pointer;
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  user-select: none;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exam-card:hover {
+  border-color: #0052cc;
+}
+
+.exam-card.selected {
+  background-color: #e0f0ff;
+  border-color: #0052cc;
+  box-shadow: 0 0 10px rgba(0, 82, 204, 0.5);
+}
+
+.exam-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.exam-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #003366;
+}
+
+/* SOP Card inside ExamsPlanning */
+.sop-card {
+  margin: 1rem 0 1.5rem 0;
+  padding: 0.75rem 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  max-width: 320px;
+  user-select: none;
+}
+
+.sop-card input[type="checkbox"] {
+  margin-right: 0.75rem;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.sop-card label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #003366;
+}
+
+/* ===== FieldOfInterest ===== */
+.field-dropdown {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 1.25rem;
+}
+
+.field-dropdown:focus {
+  border-color: #0052cc;
+}
+
+.other-field {
+  margin-bottom: 2rem;
+}
+
+.other-field label {
+  display: block;
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 0.4rem;
+}
+
+.other-field input[type="text"] {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.other-field input[type="text"]:focus {
+  border-color: #0052cc;
+}
+
+/* ===== PlannedStudyYear ===== */
+.study-year-dropdown {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.study-year-dropdown:focus {
+  border-color: #0052cc;
+}
+
+/* ===== StudyDestination ===== */
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.flag-card {
+  cursor: pointer;
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  user-select: none;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+
+.flag-card:hover {
+  border-color: #0052cc;
+}
+
+.flag-card.selected {
+  background-color: #e0f0ff;
+  border-color: #0052cc;
+  box-shadow: 0 0 10px rgba(0, 82, 204, 0.5);
+}
+
+.flag {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.country {
+  color: #003366;
+  font-size: 1rem;
+}
+
+/* Other country input */
+.other-country {
+  margin-bottom: 2rem;
+}
+
+.other-country label {
+  font-weight: 600;
+  color: #003366;
+  margin-right: 0.5rem;
+}
+
+.other-country input[type="text"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  max-width: 320px;
+  transition: border-color 0.3s ease;
+}
+
+.other-country input[type="text"]:focus {
+  border-color: #0052cc;
+}
